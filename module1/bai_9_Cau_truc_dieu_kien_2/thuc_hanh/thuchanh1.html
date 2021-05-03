@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img id="my Image" src="https://thuviendohoa.vn/upload/images/items/hinh-anh-qua-bong-vang-png-454.webp"/>
+<p>Cick button below to move the image to right</p>
+    <input type="button" value="Click me"/>
+    let imgObj = null
+</form>
+<script>
+    var imgObj = null;
+    imgObj = document.getElementById('myImage');
+    function init() {
+        imgObj = document.getElementById('myImage');
+        imgObj.style.position = 'relative';
+        imgObj.style.left = 'Opx';
+    }
+    function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+    }
+        window.onload=init;
+    <input type = "button" value="Cick me " oncik = "moveRight();"/>
+    }
+</script>
+
+
+</body>
+</html>

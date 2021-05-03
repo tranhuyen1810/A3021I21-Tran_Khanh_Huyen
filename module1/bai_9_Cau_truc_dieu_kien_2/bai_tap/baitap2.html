@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" name="text" size="30" id="txt"/>
+    <p></p><input type="button" name="Tinh so ngay" value="Tinh so ngay" size="30" onclick="tinhNgay()"/></p>
+</form>
+<script>
+    function tinhNgay() {
+        let num = document.getElementById("txt").value;
+        alert(num)
+        switch (num) {
+            case "1":
+                alert("31 ngày")
+            case "2":
+                alert("28 ngày hoặc 29 ngày");
+        }
+    }
+</script>
+
+</body>
+</html>

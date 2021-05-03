@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p id="txt"></p><br/>
+    <lue="/" input type="button" name="1" value="1" onclick="tinhtoan(1)"/>
+    <input type="button" name="2" value="2" onclick="tinhtoan(2)"/>
+    <input type="button" name="3" value="3" onclick="tinhtoan(3)"/>
+    <input type="button" name="+" value="+" onclick="tinhtoan('+')"/><br/>
+    <input type="button" name="4" value="4" onclick="tinhtoan(4)"/>
+    <input type="button" name="5" value="5" onclick="tinhtoan(5)"/>
+    <input type="button" name="6" value="6" onclick="tinhtoan(6)"/>
+    <input type="button" name="-" value="-" onclick="tinhtoan('-')"/></br>
+    <input type="button" name="7" value="7" onclick="tinhtoan(7)"/>
+    <input type="button" name="8" value="8" onclick="tinhtoan(8)"/>
+    <input type="button" name="9" value="9" onclick="tinhtoan(9)"/>
+    <input type="button" name="*" value="*" onclick="tinhtoan('*')"/></br>
+    <input type="button" name="C" value="C" onclick="tinhtoan(C)"/>
+    <input type="button" name="0" value="0" onclick="tinhtoan(0)"/>
+    <input type="button" name="=" value="=" onclick="tinhtoan('=')"/>
+    <input type="button" name="/" value="/" onclick="tinhtoan('/')"/>
+</form>
+<script>
+    function tinhtoan(value) {
+        let str = document.getElementById("txt").innerText;
+        let kq = "";
+        if (value == "=") {
+            console.log(str);
+            kq = eval(str);
+            document.getElementById("txt").innerText = kq;
+        } else {
+            str += value;
+            document.getElementById("txt").innerText = str;
+        }
+
+
+    }
+</script>
+
+
+</body>
+</html>

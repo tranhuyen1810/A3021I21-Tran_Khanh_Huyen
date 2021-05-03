@@ -1,0 +1,6 @@
++Vẫn chưa biết cách full màu cho table cho bài tập
++xem lại tạo bảng sở thích khách hàng về cách lấy màu cho phù hợp
++Bài tập bảng biểu lấy serve khách hàng làm sao để lấy dolarr xuống dòng của khung tiền ? Lấy khung văn bản có thể chứa nhiều dòng trong một 
+khung
+
+
