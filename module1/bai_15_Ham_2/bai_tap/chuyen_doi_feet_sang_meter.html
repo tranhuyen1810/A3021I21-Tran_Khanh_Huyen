@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi từ feet sang meter</title>
+</head>
+<body>
+<p>
+    <label>Feet</label>
+    <input type="number" placeholder="Feet" id="inputfeet"
+           oninput="LengthConverter (this.value)"
+           onchange="LengthConverter (this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+<script>
+    function LengthConverter(valNum) {
+        document.getElementById("outputMeters").innerHTML=valNum*0.305;
+    }
+</script>
+</body>
+</html>
